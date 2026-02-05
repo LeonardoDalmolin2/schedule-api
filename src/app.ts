@@ -13,6 +13,13 @@ app.get('/api/health', (_req, res) => {
   res.status(200).json({ status: 'ok' });
 });
 
+app.get('/', (_req, res) => {
+  res.json({
+    name: 'Schedule API',
+    status: 'running',
+  });
+});
+
 
 
 export default app;
